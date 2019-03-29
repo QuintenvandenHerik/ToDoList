@@ -37,6 +37,15 @@ h2 {
     margin-bottom: 5px;
 }
 
+h4 {
+    display: block;
+    margin-block-start:  0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+}
+
 div {
     margin: 0;
     background-color: #CACACA;
@@ -45,6 +54,12 @@ div {
 
 p:last-of-type {
     position: static;
+    position: static;
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 a {
@@ -68,13 +83,13 @@ a + a + a {
     vertical-align: super;
 }
 
-pre a {
+a {
     color: blue;
     font-size: 80%;
     vertical-align: super;
 }
 
-pre a + a {
+a + a {
     color: red;
     font-size: 80%;
     vertical-align: super;
@@ -98,4 +113,13 @@ form label {
 
 form input[type=submit]:only-child {
     margin-left: 100px;     /* place submit button underneath fields */
+}
+
+ul {
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
