@@ -71,18 +71,6 @@ a:hover {
     text-decoration: underline;
 }
 
-a + a {
-    color: blue;
-    font-size: 80%;
-    vertical-align: super;
-}
-
-a + a + a {
-    color: red;
-    font-size: 80%;
-    vertical-align: super;
-}
-
 a {
     color: blue;
     font-size: 80%;
@@ -90,6 +78,24 @@ a {
 }
 
 a + a {
+    color: red;
+    font-size: 80%;
+    vertical-align: super;
+}
+
+h2 a {
+    color: black;
+    font-size: 80%;
+    vertical-align: super;
+}
+
+h2 a + a {
+    color: blue;
+    font-size: 80%;
+    vertical-align: super;
+}
+
+h2 a + a + a {
     color: red;
     font-size: 80%;
     vertical-align: super;
