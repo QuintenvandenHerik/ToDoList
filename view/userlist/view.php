@@ -1,7 +1,7 @@
 <?php
-    foreach($getListItem as $item) {
-        printf("<h2>". $item["name"]["description"]["status"]["time"] . " &nbsp <a href='%stodolist/edit/%s'>edit</a> &nbsp <a href='%stodolist/delete/%s'>x</a></h2>", 
-            URL, $item["id"], URL, $item["id"]);
+    foreach($getAllListItems as $item) {
+        printf("<div><h2> %s </h2>%s<pre>status: %s<pre>time: %s<pre><a href='%stodolist/editItem/%s'>edit</a> &nbsp <a href='%stodolist/deleteItem/%s/%s'>x</a></div>", 
+            $item["task_name"], $item["task_description"], $item["task_status"], $item["task_time"], URL, $item["task_id"], URL, $item["task_id"], $item["task_list_id"]);
     }
 ?>
-<p><a href="<?= URL ?>todolist/create">+ Toevoegen</a></p> 
+<p><a href="<?= URL ?>todolist/createItem/<?= $id ?>">+ Toevoegen</a></p>
