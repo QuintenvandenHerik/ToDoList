@@ -78,14 +78,15 @@ function filterListStatus() {
 }
 
 function filterListTime() {
-    var input, filter, ul, li, a, i, txtValue;
+    var input, filter, ul, li, h4, i, txtValue;
     input = document.getElementById("inputTime");
     filter = input.value.toUpperCase();
+    console.log(filter);
     ul = document.getElementById("taskList");
     li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("h4")[0];
-        txtValue = a.textContent || a.innerText;
+        h4 = li[i].getElementsByTagName("h4")[0];
+        txtValue = h4.textContent || h4.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
         } else {
